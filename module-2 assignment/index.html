@@ -9,15 +9,16 @@
 .box-container {
   max-width: 1400px;
   margin: 40px auto 0 auto;
-
-  }
+}
 
 .box {
   padding: 5px;
   box-sizing: border-box;
   margin-bottom: 20px;
-  flex-basis: 33.33%;
-  }
+  flex-basis: 30%;
+  justify-content: space-between;
+ }
+
 
   
 
@@ -35,7 +36,10 @@ p {
 }
 .btn {
   border: 1px solid black;
-  text-align: right;
+  width: 80px;
+  align-self: right;
+  text-align: center;
+  
 }
 
 
@@ -51,6 +55,8 @@ p {
     display: flex;
     justify-content: space-between;
   }
+  
+  
 }
   
 /********** Tablet devices only **********/
@@ -59,7 +65,11 @@ p {
     display: flex;
     justify-content: space-between;
   }
+  #box3 {
+   flex-wrap: wrap; 
+  }
 } 
+
 
 
 /********** Mobile devices only **********/
@@ -74,15 +84,15 @@ p {
 <body>
 <h1>Assignment Module 2</h1>
 <div class="box-container">
-  <div class="box">
+  <div class="box" id="box1">
     <h4 class="btn">Steak</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quibusdam. Velit accusantium rem quasi autem, dolorum reprehenderit, molestias, officiis dignissimos, doloremque voluptatem ea! Tempora cum, odit vitae optio laudantium eveniet?</p>
   </div>
-  <div class="box">
+  <div class="box" id="box2">
     <h4 class="btn">Chicken</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quibusdam. Velit accusantium rem quasi autem, dolorum reprehenderit, molestias, officiis dignissimos, doloremque voluptatem ea! Tempora cum, odit vitae optio laudantium eveniet?</p>
   </div>
-  <div class="box">
+  <div class="box" id="box3">
     <h4 class="btn">Fish</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quibusdam. Velit accusantium rem quasi autem, dolorum reprehenderit, molestias, officiis dignissimos, doloremque voluptatem ea! Tempora cum, odit vitae optio laudantium eveniet?</p>
   </div>
