@@ -1,0 +1,93 @@
+/********** Base styles **********/
+
+.box-container {
+  border: 30px;
+}
+
+.box {
+  background-color: #666;
+  border: 1px solid black;
+  box-sizing: border-box;
+  flex-basis: 30%;
+  justify-content: space-around;
+  padding-top: 0px;
+  padding-right: 0px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+}
+
+h1 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+p {
+  padding: 2px 10px 2px 10px;
+  width: auto;
+  height: auto;
+  margin:60px 5px 5px 5px;
+  font-family: Helvetica;
+  color: white;
+}
+
+.section-title {
+  margin: 0px;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  border: 1px solid black;
+  width: 80px;
+  text-align: center;
+  float: right;
+}
+
+/* Simple Responsive Framework. */
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+  
+  .box-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+  
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .box-container {
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  
+  #box1 {
+    height:200px;
+    width: 30%;
+    flex-grow: 1;
+    margin-right: 40px;
+  }
+
+  #box2 {
+    max-height: 200px;
+    flex-grow: 1;
+  }
+
+  #box3 {
+    margin-top: 25px;
+    flex-basis: 80%;
+    height: 200px;
+    flex-grow: 2;
+  }
+} 
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+  
+  .box-container {
+    margin: 40px 40px;
+  }
+
+  .box {
+    margin: 30px;
+  }
+}
