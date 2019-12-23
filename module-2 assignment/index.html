@@ -7,45 +7,50 @@
 /********** Base styles **********/
 
 .box-container {
-  max-width: 1400px;
-  margin: 40px auto 0 auto;
+  border: 30px;
+  
 }
 
 .box {
-  padding: 5px;
+  background-color: #666;
+  border: 1px solid black;
   box-sizing: border-box;
-  margin-bottom: 20px;
   flex-basis: 30%;
-  justify-content: space-between;
- }
+  justify-content: space-around;
+  padding-top: 0px;
+  padding-right: 0px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+}
 
 
-  
 
 h1 {
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 p {
+  padding: 2px;
   width: auto;
   height: auto;
-  margin-right: auto;
-  margin-left: auto;
+  margin:60px auto 5px auto;
   font-family: Helvetica;
-  color: black;
+  color: white;
 }
-.btn {
+.section-title {
+  margin: 0px;
+  background-color: white;
+  font-family: Arial, sans-serif;
   border: 1px solid black;
   width: 80px;
-  align-self: right;
   text-align: center;
+  float: right;
   
 }
 
 
-.box:nth-child(1) {background-color: #c0dbe2}
-.box:nth-child(2) {background-color: #cdf1c3}
-.box:nth-child(3) {background-color: #ccb9da}
+
 
 /* Simple Responsive Framework. */
 
@@ -53,7 +58,7 @@ p {
 @media (min-width: 992px) {
   .box-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
   
@@ -61,12 +66,33 @@ p {
   
 /********** Tablet devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+
   .box-container {
+    margin: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-flow: row wrap;
   }
+  
+  #box1 {
+    height:200px;
+    width: 30%;
+    flex-grow: 1;
+    margin-right: 40px;
+      
+  }
+
+  #box2 {
+    max-height: 200px;
+    flex-grow: 1;
+    
+  }
+
   #box3 {
-   flex-wrap: wrap; 
+    margin-top: 25px;
+    flex-basis: 80%;
+    height: 200px;
+    flex-grow: 2;
   }
 } 
 
@@ -74,7 +100,12 @@ p {
 
 /********** Mobile devices only **********/
 @media (max-width: 767px) {
-
+  .box-container {
+    margin: 40px 40px;
+  }
+  .box {
+    margin: 30px;
+  }
 } 
  
   
@@ -84,18 +115,18 @@ p {
 <body>
 <h1>Assignment Module 2</h1>
 <div class="box-container">
-  <div class="box" id="box1">
-    <h4 class="btn">Steak</h4>
+  <section class="box" id="box1">
+    <h4 class="section-title">Steak</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quibusdam. Velit accusantium rem quasi autem, dolorum reprehenderit, molestias, officiis dignissimos, doloremque voluptatem ea! Tempora cum, odit vitae optio laudantium eveniet?</p>
-  </div>
-  <div class="box" id="box2">
-    <h4 class="btn">Chicken</h4>
+  </section>
+  <section class="box" id="box2">
+    <h4 class="section-title">Chicken</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quibusdam. Velit accusantium rem quasi autem, dolorum reprehenderit, molestias, officiis dignissimos, doloremque voluptatem ea! Tempora cum, odit vitae optio laudantium eveniet?</p>
-  </div>
-  <div class="box" id="box3">
-    <h4 class="btn">Fish</h4>
+  </section>
+  <section class="box" id="box3">
+    <h4 class="section-title">Fish</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quibusdam. Velit accusantium rem quasi autem, dolorum reprehenderit, molestias, officiis dignissimos, doloremque voluptatem ea! Tempora cum, odit vitae optio laudantium eveniet?</p>
-  </div>
+  </section>
 </div>
 
 </body>
