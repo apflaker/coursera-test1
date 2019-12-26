@@ -1,7 +1,8 @@
+/********** Base styles **********/
+
 * {
   box-sizing: border-box;
 }
-/********** Base styles **********/
 
 .box-container {
   border: 30px;
@@ -29,27 +30,27 @@ p {
   height: auto;
   margin:60px 5px 5px 5px;
   font-family: Helvetica;
-  color: white;
+  /*color: white;*/
 }
 
 .section-title {
   margin: 0px;
-  background-color: white;
+ 
   font-family: Arial, sans-serif;
+  font-size: 22px;
   border: 1px solid black;
   width: 80px;
   text-align: center;
   float: right;
 }
-
 #title-box2 {
-    background-color: black;
-    color:white;
-}
+  background-color: black;
+  color: white;
+  }
 
 #title-box3 {
-    background-color: darkgrey;
-    color: black;
+   background-color: #000000;
+   color: white;
 }
 
 /* Simple Responsive Framework. */
@@ -61,6 +62,7 @@ p {
     display: flex;
     justify-content: space-around;
   }
+
 }
   
 /********** Tablet devices only **********/
