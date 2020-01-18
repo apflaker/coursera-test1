@@ -1,3 +1,57 @@
 body {
+  color: #000;
   background-color: white;
+ }
+
+/*** nav ***/
+#header-nav {
+  background-color: #999;
+  border-radius: 0;
+  border: black solid 2px;
+  font-weight: bold;
+  margin-right: 0px;
+  margin-left: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  width: auto;
+}
+.navbar-brand {
+  text-align: left;
+  background-color: #999;
+  font-weight: bold;
+  font-size: 24px;
+  color: #000;
+
+}
+h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+p {
+  margin: 0 10px 0 10px;
+}
+
+
+.container {
+  background-color: #999;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: auto;
+
+}
+
+/*** Small devices (landscape phones, 576px and up)***/
+@media (min-width: 576px) {
+
+}
+
+/***Medium devices (tablets, 768px and up)***/
+@media (min-width: 768px) {
+
 }

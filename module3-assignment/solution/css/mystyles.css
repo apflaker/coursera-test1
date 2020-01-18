@@ -1,0 +1,19 @@
+#logo-img {
+	background:url('../myimages/my3mplogo-large.png') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+}
+
+.container {
+	margin-left: 15px;
+	background-color: #000;
+}
+
+.navbar-default {
+	background-color: #000;
+}
+
+h1 {
+	font-size: 30px;
+}
