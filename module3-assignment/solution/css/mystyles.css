@@ -1,61 +1,242 @@
+body {
+	background-color: #282828;
+}
+
 .navbar navbar-inverse {
 	height: 175px;
+}
+
+#header-nav {
 
 }
+
 .nav {
 	float: right;
 }
+
 .navbar {
 	margin-bottom: 0;
 	border-radius: 0;
 	min-height: 175px;
-	background-color: #000;
+	background-color: #282828;
 	font-size: 1.4em;
 	color: #fff;
 	padding: 1% 0;
+	border-bottom-color: dimgrey;
 }
 
+.navbar-brand {
+	padding: 10px 15px 0;
 }
-navbar-brand img {
+
+
+/*** homepage ***/
+.validate {
+	border: 0;
+	width: 88px;
+	height: 31px;
+	float: right;
+}
+
+.container .jumbotron {
+    box-shadow: 0 0 50px #282828;
+	border: 2px solid #282828;
+	padding: 0;	
+}
+
+#collection-tile, #collection-tile2, #collection-tile3 {
+	height: 400px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #282828;
+}
+
+#collection-tile:hover, #collection-tile2:hover, #collection-tile3:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#collection-tile {
+	background: url('../myimages/col-tile_300x300.jpg') no-repeat;
+	background-position: center;
+}
+
+#collection-tile2 {
+	background: url('../myimages/col-tile2_300x300.jpg') no-repeat;
+	background-position: center;
+}
+
+#collection-tile3 {
+	background: url('../myimages/col-tile3_300x300.jpg') no-repeat;
+	background-position: center;
+}
+
+#collection-tile span, #collection-tile2 span, #collection-tile3 span {
 	position: absolute;
-	top: 10px;
+	top: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.9em;
+	border: 2px solid #cccccc;
+	background-color: #282828;
+	color: #fff;
 }
 
+/** media queries **/
 
-
-
-/***     origional css    ***/
-/***#logo-img {
-	background:url('../myimages/my3mplogo-large.png') no-repeat;
-	width: 150px;
-	height: 150px;
-	margin: 10px 15px 10px 0;
+/*** extra-small devices ***/
+@media (max-width: 767px) {
+	.container .jumbotron {
+        margin-top: 30px;
+        padding: 0;
+    }
+    .footer-icons .text-center .col-xs-12 {
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+    a.fa {
+	    padding: 10px;
+	    width: 30px;
+	    font-size: 30px;
+	    text-align: center;
+	    text-decoration: none;
+	    color: #9d9d9d;
+    }
+    a.fa:hover {
+    	opacity: 1.0;
+    	color: #fff;
+    }
 }
-
-.container {
-	margin-left: 15px;
-	background-color: #000;
-}
-
-.navbar-default {
-	background-color: #000;
-}
-
-h1 {
-	font-size: 30px;
-}
-***/
-
-/*** Small devices (landscape phones, 576px and up)***/
-@media (min-width: 576px) {
-
-}
-
-/***Medium devices (tablets, 768px and up)***/
+/*** Small devices ***/
 @media (min-width: 768px) {
+	.container .jumbotron {
+		background: url(../myimages/yoga1_768.jpg) no-repeat;
+		height:380px;
+	}
+
+/*** footer ***/
+	.footer-icons .text-center .col-sm-12 {
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+	a.fa:hover {
+        color: #fff;
+	}
 
 }
 
-@media (min-width: 980px) {
+/*** Medium devices ***/
+@media (min-width: 992px) {
+    .container .jumbotron {
+		background: url(../myimages/yoga1_992.jpg) no-repeat;
+		height:450px;
+	}	
+}
+
+/*** Large devices only ***/
+@media (min-width: 1200px) {
+	.container .jumbotron {
+		background: url(../myimages/yoga1_1200.jpg) no-repeat;
+		
+	}
+	#collection-tile, #collection-tile2, #collection-tile3 {
+		background-color: rgba(0, 0, 0, 0);
+		
+	}
+}
+/*** footer ***/
+
+/**.main_footer {
+	width: 100%;
+	height: auto;
+    margin: auto;
+    background: #fff
+    padding-top: 20px;
+} **/
+h2 {
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+	border-bottom: 2px solid dimgrey;
+}
+
+/**#foot-list {
+	text-align: center;
+} **/
+
+a.list-group-item {
+	background-color: #282828;
+	color: #9d9d9d;
+	border: 0;
+}
+
+a.list-group-item:hover {
+	background-color: #282830;
+	color: #fff;
 
 }
+
+.foot-row {
+	color: #fff;
+	margin-top: 20px;
+}
+
+.footer-icons {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+a.fa {
+	padding: 10px;
+	width: 30px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	color: #9d9d9d;
+}
+
+a.fa:hover {
+	opacity: 1.0;
+	color: #fff;
+}
+
+
+
+p {
+	color: #9d9d9d;
+}
+
+input.footer_textstyle {
+    width: 90%;
+}
+/***footer {
+	color: #fff;
+	margin: 0;
+}
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #282828;
+  color: #fff;
+
+}
+.foot-row {
+  border-top: 2px solid dimgray;
+  padding-top: 5px;
+  display: flex;
+}
+
+.footer-header {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.fa {
+	padding: 5px;
+	width: 30px;
+	font-size: 30px;
+	text-align: left;
+}***/
